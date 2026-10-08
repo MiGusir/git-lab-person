@@ -13,3 +13,7 @@ class Person:
 
     def is_adult(self) -> bool:
         return self.age >= 18
+
+    def birthday(self) -> None:
+        """Increase age by one year."""
+        self.age += 1
