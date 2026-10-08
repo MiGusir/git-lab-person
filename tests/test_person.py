@@ -16,3 +16,9 @@ def test_is_adult():
 def test_negative_age():
     with pytest.raises(ValueError):
         Person("X", -1)
+
+
+def test_birthday():
+    p = Person("Ann", 21)
+    p.birthday()
+    assert p.age == 22
